@@ -1,0 +1,30 @@
+var x := 12
+var s := "sh"
+var y := x + 5
+
+
+print[x]
+
+if x < 23
+    print[s]
+    print[y]
+!
+
+if x <= 21
+    var y == 5
+!
+
+print[y * 2]
+
+if x == 12
+    print[x / 6]     
+!
+
+while y < 8
+    print["hello word" y]
+    var y = y + 1
+!
+
+for var k from 0 to 5
+    print[k]
+!

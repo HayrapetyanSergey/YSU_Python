@@ -1,0 +1,76 @@
+The program reads the file given by the user's  and executes it using python programming language.
+It understands the syntax I've created, and it performs actions on it. If you want to announce
+variable, it is necessary to use the keyword "var" at the beginning of the line, and then give the name of the variable,
+which must be any ascii letter, the variable name must be followed by a ":=" sign so that the interpreter will understand 
+and assign the value that is assigned to the variable by the user.
+1.  If the variable name is not any ascii letter, the program will return the corresponding error information.
+    SyntaxError("Variables must start with ascii letter.")
+
+2.  If an undeclared variable is used, you will receive an error message.
+    NameError(f"Name ___ is unrecognizable.")
+
+The end of an "if", "while" or "for" condition and loops must have a "!" symbol to let the program understand that 
+the specified condition or loops have completed.
+3.  If the "!" sign is missing, the program will give information about the corresponding error.
+    SyntaxError("Number of 'if, while,for' and '!' must be equal:")
+    SyntaxError("After while you mast end with !")
+    SyntaxError("After for you mast end with !")
+    SyntaxError("After if you mast end with !")
+
+"If" condition will work if the given condition is true, otherwise it will just skip the body of that condition.
+
+"While" loop will work as long as given condition is true.If the given condition is always true, then it will be 
+fulfilled endlessly.
+
+When using a "for" loop, you need to declare a variable after for, and then specify its modification range with
+the help of "from" and "to" words.
+    I have worked with for only with numbers, that is, it will work only if a range is given, and then it requests 
+    to print the numbers of that range.
+
+The program performs the Print action if the word "print" is found in the line, followed by "[ ]", symbols,
+in which the expected output is written.
+4.  If it is not followed by a "[ ] " symbol, you will receive a corresponding error message.
+    SyntaxError("After print you must start with '[' and finish with']'")
+
+Most importantly, in order for the interpreter to be able to read the file provided by the user, 
+it must end with ".hay" extension.
+5.  If the extension is different you will get the corresponding error message.
+    FileNotFoundError("File must have .hay extension")
+
+Examples
+1.
+    Input:  var x := 12
+            var y := x + 5
+            print[y]
+
+    Output: 17
+
+2
+    Input:  var x := 12
+            var s := "This is so wonderful"
+
+            if x < 23
+                print[s]
+            !
+
+    Output: This is so wonderful
+
+3. 
+    Input:  for var k from 1 to 3
+                print[k]
+            !
+
+    Output: 1 
+            2
+
+4.
+    Input:  var y = 2
+
+            while y < 5
+                print["example" y]
+                var y = y + 1
+            !
+
+    Output: "example" 2
+            "example" 3
+            "example" 4
