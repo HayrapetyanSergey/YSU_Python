@@ -64,7 +64,7 @@ def variable_after_declaring(idx):
 
 
 def already_declared(idx):
-    """This function is cheking, that declared variables were been declared. """
+    """This function is cheking, that declared variables were been declared."""
 
     row = list_of_text[idx].split()
     if row[1] in variable_dict:
@@ -81,7 +81,7 @@ def creating_variable(arg):
 
 
 def variable_name(row):
-    """This function is cheking or does it start with ascii letter?"""
+    """This function is cheking or does it start with ascii letter."""
 
     if not row[1][0].isalpha():
         raise SyntaxError("Variables must start with ascii letter.")
@@ -96,7 +96,7 @@ def variable_value(row):
 
 
 def is_declared(idx):
-    """This function ceking Is the variable declared?"""
+    """This function ceking Is the variable declared."""
 
     row = list_of_text[idx].split()
     for i in range(5):
@@ -107,7 +107,7 @@ def is_declared(idx):
 
 
 def untill_if_while_for(ind = 0):
-    """This function do file line by line untill will reach a line that starts with 'if'"""
+    """This function do file line by line untill will reach a line that starts with 'if'."""
 
     while ind != len(list_of_text):
         if "if" in list_of_text[ind] or "while" in list_of_text[ind] \
